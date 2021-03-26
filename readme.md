@@ -1,0 +1,1 @@
+This project is intended to be a fairly simple database- driven filesharing website.
