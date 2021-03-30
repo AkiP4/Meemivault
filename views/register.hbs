@@ -26,6 +26,10 @@
 
     <form method="post" action="/auth/register">
 
+        {{#if message}}
+            <h6 class="alert alert-danger mt-4">{{message}}</h6>
+        {{/if}}
+
             <div class="input-group">
                 <label>Username</label>
                 <input type="text" name="name">
@@ -37,6 +41,10 @@
             <div class="input-group">
                 <label>Password</label>
                 <input type="password" name="password">
+            </div>
+            <div class="input-group">
+                <label>Confirm Password</label>
+                <input type="password" name="passwordConfirm">
             </div>
             <div class="input-group">
                 <button type="submit" name="register" class="btn">Register</button>
