@@ -28,7 +28,7 @@ exports.login = async (req, res) => {
             else {
                 const id = results[0].id;
                 const token = jwt.sign({id}, process.env.JWT_SECRET, {
-                    expiresIn: process.env.JWT_EXPIRES_IN
+                    expiresIn: process.env.JWT_EXPIRES_IN  
                 });
 
                 console.log("The token is:" + token);
@@ -41,7 +41,7 @@ exports.login = async (req, res) => {
                 }
 
                 res.cookie("jwt", token, cookieOptions);
-                res.status(200).redirect("/");
+                res.status(200).redirect("/main");
             }
         });
 
