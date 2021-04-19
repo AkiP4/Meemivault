@@ -41,7 +41,12 @@ exports.login = async (req, res) => {
                 }
 
                 res.cookie("jwt", token, cookieOptions);
+<<<<<<< Updated upstream
                 res.status(200).redirect("/main");
+=======
+                res.status(200).redirect("/");
+
+>>>>>>> Stashed changes
             }
         });
 
