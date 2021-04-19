@@ -25,6 +25,22 @@ body {
     box-shadow: 5px 5px 5px lightgrey;
 }
 
+.header2{
+    margin: 10px;
+    padding-right: 35px;
+    color: black;
+    background-image: url('logo.jpg');
+    filter: invert(1);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: right;
+    border: 2px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 2px;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -108,4 +124,22 @@ nav li a:hover {
     color: white;
     text-decoration: none;
     margin: 20px;
+}
+
+.searchbar {
+    height: 35px;
+    margin: 9px;
+}
+
+.categories{
+    color: white;
+    margin: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.inputBox {
+    display: flex;
+    align-items: center;
 }
