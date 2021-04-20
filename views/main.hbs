@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,25 +15,42 @@
 
 <body>
 
+    <div class="leftbar"></div>
+    <div class="rightbar"></div>
+
     <nav>
-        <h4 class="header2">Meemivault</h4>
-        <input class="searchbar" type="field">
+        <h4 class="header2">Memevault</h4>
         <div class="categories">
-            <li>New</li>
-            <li>Popular</li>
-            <li>WTF</li>
+            <li><a>New</a< /li>
+            <li><a>Popular</a< /li>
+            <li><a>WTF?</a></li>
             <li><a href="/">Home</a></li>
         </div>
 
+        <div class="searchbar">
+            <i class="fas fa-search"></i>
+            <input class="searchBox" type="field" placeholder="Search">
+        </div>
 
         <div class="inputBox">
-            <br>
-            <input type='file' onchange="readURL(this);" />
-            <br>
+            <input type="file" name="file" id="file" class="inputFile" onchange="readURL(this);" />
+            <label for="file"><i class="far fa-plus-circle"></i></label>
+            <p style="margin: 0px;">Upload meme</p>
+        </div>
+
+        <div class="user">
+            <i class="far fa-user-circle"></i>
         </div>
     </nav>
-    <img id="meme" src="#" alt="Your image should appear here after a while." />
+
+    <div class="container">
+        <div class="outputBox">
+            <img id="meme" src="#"/>
+        </div>
+    </div>
+
     <script>
+
         function readURL(input) {
             if (input.files && input.files[0]) {
                 var reader = new FileReader();
@@ -40,7 +58,7 @@
                 reader.onload = function (e) {
                     $('#meme')
                         .attr('src', e.target.result)
-                        .width(384) //Image width 
+                        .width(400) //Image width 
                         .height(); //Image height
                 };
                 reader.readAsDataURL(input.files[0]);

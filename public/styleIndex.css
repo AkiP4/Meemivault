@@ -1,6 +1,6 @@
 body {
     background-image: url('4853433.jpg');
-    background-size: auto;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 
@@ -9,7 +9,6 @@ body {
     flex-direction: column;
     align-items: center;
 }
-
 
 .header {
     max-width: 500px;
@@ -26,19 +25,14 @@ body {
 }
 
 .header2{
-    margin: 10px;
+    margin: 40px 30px 40px 30px;
     padding-right: 35px;
     color: black;
+    font-size: 35px;
     background-image: url('logo.jpg');
-    filter: invert(1);
     background-size: 30px 30px;
     background-repeat: no-repeat;
     background-position: right;
-    border: 2px solid black;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-radius: 2px;
 }
 
 form {
@@ -62,9 +56,9 @@ form p {
     margin-top: 5%;
 }
 
+
 .input-group {
     margin: 15px;
-    
 }
 
 .input-group label {
@@ -87,11 +81,9 @@ form p {
 }
 
 nav {
-    background-color:cadetblue;
+    background-color:#d8d8d8;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: right;
+    justify-content: space-around;
 }
 
 nav ul {
@@ -104,12 +96,16 @@ nav ul {
 nav li {
     list-style: none;
     padding: 10px;
+    display: flex;
+    align-items: center;
 }
 
 nav li a {
-    color: #fff;
+    color: rgb(0, 0, 0);
     text-decoration: none;
-
+    font-size: 22px;
+    font-weight: 600;
+    margin: 10px;
 }
 
 nav li a:hover {
@@ -126,20 +122,84 @@ nav li a:hover {
     margin: 20px;
 }
 
-.searchbar {
-    height: 35px;
-    margin: 9px;
-}
-
-.categories{
-    color: white;
+.categories {
+    color: black;
     margin: 4px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.inputBox {
+.searchBox {
+    height: 35px;
+    width: auto;
+    margin: 9px;
+}
+
+.searchbar {
     display: flex;
     align-items: center;
+}
+
+.user {
+    margin: 10px 10px 10px 10px;
+    display: flex;
+    align-items: center;
+}
+.fa-user-circle {
+    font-size: 45px;
+    margin: 30px;
+}
+
+.fa-plus-circle {
+    font-size: 45px;
+}
+
+.inputBox {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    text-align: center;
+    width: 100px;
+}
+
+.inputFile{
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	z-index: -1;
+    cursor: pointer;
+}
+
+.container{
+    height: 750px;
+    width: 1320px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.outputBox {
+    display:flex; 
+    justify-content: center;
+}
+
+#meme{
+    border: 40px solid #cccccc;
+}
+
+.leftbar {
+    height: 937px;
+    width: 140px;
+    background-color:#d8d8d8;
+    float: left;
+}
+
+.rightbar {
+    height: 937px;
+    width: 140px;
+    background-color:#d8d8d8;
+    float: right;
+    position: relative;
 }
