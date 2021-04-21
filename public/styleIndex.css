@@ -81,9 +81,11 @@ form p {
 }
 
 nav {
-    background-color:#d8d8d8;
+    background-color:#5f9ea0;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: right;
 }
 
 nav ul {
@@ -96,16 +98,12 @@ nav ul {
 nav li {
     list-style: none;
     padding: 10px;
-    display: flex;
-    align-items: center;
 }
 
 nav li a {
-    color: rgb(0, 0, 0);
+    color: #fff;
     text-decoration: none;
-    font-size: 22px;
-    font-weight: 600;
-    margin: 10px;
+
 }
 
 nav li a:hover {
@@ -122,84 +120,3 @@ nav li a:hover {
     margin: 20px;
 }
 
-.categories {
-    color: black;
-    margin: 4px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.searchBox {
-    height: 35px;
-    width: auto;
-    margin: 9px;
-}
-
-.searchbar {
-    display: flex;
-    align-items: center;
-}
-
-.user {
-    margin: 10px 10px 10px 10px;
-    display: flex;
-    align-items: center;
-}
-.fa-user-circle {
-    font-size: 45px;
-    margin: 30px;
-}
-
-.fa-plus-circle {
-    font-size: 45px;
-}
-
-.inputBox {
-    margin: 10px;
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    text-align: center;
-    width: 100px;
-}
-
-.inputFile{
-    width: 0.1px;
-	height: 0.1px;
-	opacity: 0;
-	overflow: hidden;
-	z-index: -1;
-    cursor: pointer;
-}
-
-.container{
-    height: 750px;
-    width: 1320px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.outputBox {
-    display:flex; 
-    justify-content: center;
-}
-
-#meme{
-    border: 40px solid #cccccc;
-}
-
-.leftbar {
-    height: 937px;
-    width: 140px;
-    background-color:#d8d8d8;
-    float: left;
-}
-
-.rightbar {
-    height: 937px;
-    width: 140px;
-    background-color:#d8d8d8;
-    float: right;
-    position: relative;
-}

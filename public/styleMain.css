@@ -16,13 +16,13 @@ body {
     width: 60%;
     margin: 50px auto 0px;
     color: white;
-    background: cadetblue;
+    background: #5f9ea0;
     text-align: center;
-    border: 1px solid rgba(95, 158, 160, 0.527);
+    border: 1px solid #5f9ea086;
     border-bottom: none;
     border-radius: 10px 10px 0px 0px;
     padding: 20px;
-    box-shadow: 5px 5px 5px lightgrey;
+    box-shadow: 5px 5px 5px #d3d3d3;
 }
 
 form {
@@ -30,9 +30,9 @@ form {
     width: 60%;
     margin: 0px auto;
     padding: 20px;
-    background: white;
+    background: #ffffff;
     border-radius: 0px 0px 10px 10px;
-    box-shadow: 5px 5px 5px lightgrey;
+    box-shadow: 5px 5px 5px #d4d4d4;
 }
 
 .input-group {
@@ -58,10 +58,10 @@ form {
 .btn {
     padding: 10px;
     font-size: 14px;
-    color: white;
+    color: #ffffff;
     border-radius: 5px;
     background: cadetblue;
-    box-shadow: 2px 2px 2px lightgrey;
+    box-shadow: 2px 2px 2px #d3d3d3;
 }
 
 .signIn {
@@ -85,7 +85,7 @@ nav ul {
 
 nav li {
     list-style: none;
-    padding: 10px;
+    margin: 10px;
 }
 
 nav li a {
@@ -99,11 +99,12 @@ nav li a:hover {
 }
 
 .categories {
-    color: black;
+    color: #ffffff;
     margin: 4px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
 }
 
 .searchBox {
@@ -118,17 +119,16 @@ nav li a:hover {
 }
 
 .user {
-    margin: 10px 10px 10px 10px;
+    margin: 10px;
     display: flex;
     align-items: center;
 }
 .fa-user-circle {
-    font-size: 45px;
-    margin: 30px;
+    font-size: 40px;
 }
 
 .fa-plus-circle {
-    font-size: 45px;
+    font-size: 40px;
 }
 
 .inputBox {
@@ -150,8 +150,6 @@ nav li a:hover {
 }
 
 .container{
-    height: 750px;
-    width: 1320px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -162,21 +160,10 @@ nav li a:hover {
 }
 
 #meme{
-    border: 40px solid #cccccc;
+    border: 40px solid #ffffff;
+    box-shadow: 2px 2px 2px #d3d3d3;
+    border-radius: 5px;
 }
 
-.leftbar {
-    height: 937px;
-    width: 140px;
-    background-color:#d8d8d8;
-    float: left;
-}
 
-.rightbar {
-    height: 937px;
-    width: 140px;
-    background-color:#d8d8d8;
-    float: right;
-    position: relative;
-}
 
