@@ -24,6 +24,10 @@ body {
     box-shadow: 5px 5px 5px lightgrey;
 }
 
+h4 {
+    margin: 11px;
+}
+
 .header2{
     margin: 40px 30px 40px 30px;
     padding-right: 35px;

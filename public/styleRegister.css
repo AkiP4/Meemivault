@@ -10,7 +10,6 @@ body {
     align-items: center;
 }
 
-
 .header {
     max-width: 500px;
     width: 60%;
@@ -23,6 +22,10 @@ body {
     border-radius: 10px 10px 0px 0px;
     padding: 20px;
     box-shadow: 5px 5px 5px lightgrey;
+}
+
+h4 {
+    margin: 11px;
 }
 
 form {

@@ -25,6 +25,10 @@ body {
     box-shadow: 5px 5px 5px #d3d3d3;
 }
 
+.header2 {
+    margin: 11px;
+}
+
 form {
     max-width: 500px;
     width: 60%;
@@ -124,20 +128,31 @@ nav li a:hover {
     align-items: center;
 }
 .fa-user-circle {
-    font-size: 40px;
+    font-size: 34px;
 }
 
 .fa-plus-circle {
     font-size: 40px;
+    cursor: pointer;
+}
+
+.fa-image:before {
+    font-size: 40px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
 }
 
 .inputBox {
-    margin: 10px;
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
     text-align: center;
-    width: 100px;
+    width: 250px;
+}
+
+.showmemebtn{
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
 }
 
 .inputFile{
@@ -150,19 +165,26 @@ nav li a:hover {
 }
 
 .container{
+    margin: 15px auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: auto;
+    min-height: 250px;
 }
 .outputBox {
-    display:flex; 
+    display: flex;
     justify-content: center;
+    background: #ebebeb;
 }
 
 #meme{
-    border: 40px solid #ffffff;
-    box-shadow: 2px 2px 2px #d3d3d3;
+    margin: 60px 80px 60px 80px;
+    border: 30px solid #d8d8d8;
+    box-shadow: 2px 2px 2px #c5c5c5;
     border-radius: 5px;
+    max-height: 500px;
+    max-width: 500px;
 }
 
 
