@@ -18,4 +18,8 @@ router.get("/main", (req, res) => {
     res.render("main");
 });
 
+router.get("/unauthorized", (req, res) => {
+    res.render("unauthorized");
+});
+
 module.exports = router;
