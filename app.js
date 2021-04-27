@@ -29,7 +29,7 @@ db.connect( (error) => {
     if(error) {
         console.log(error)
     } else {
-        console.log("MYSQL Connected...")
+        console.log("Connected")
     }
 })
 
